@@ -7,6 +7,7 @@ function getComputerChoice() {
 function getHumanChoice() {
     const humanChoice = prompt("play rock paper scissors")
     if (humanChoice !== "rock" || humanChoice !== "paper" || humanChoice !== "scissors" )
+        return prompt("false choice") ;getHumanChoice() 
         
     return humanChoice
 }
